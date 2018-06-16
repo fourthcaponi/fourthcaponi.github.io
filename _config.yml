@@ -1,22 +1,26 @@
 # Dependencies
-markdown:         redcarpet
 highlighter:      rouge
 
 # Setup
 title:            fourthcaponi
 tagline:          'A Jekyll theme'
 description:      'Welcome to my small corner of the internet. Please make yourself comfortable.'
-url:              http://hyde.getpoole.com
+url:              http://fourthcaponi.com
 baseurl:          /
 
 author:
   name:           'Michael Caponi'
-  url:            https://twitter.com/mdo
 
 paginate:         5
 
 # Custom vars
 version:          2.1.0
 
-github:
-  repo:           https://github.com/poole/hyde
+sidebar-links:
+  email:      fourthcaponi@gmail.com
+  facebook: 
+  github:     fourthcaponi
+  instagram:
+  linkedin:   michael-caponi-iv
+  rss: # just type anything here for a working RSS icon
+  twitter:    fourthcaponi
