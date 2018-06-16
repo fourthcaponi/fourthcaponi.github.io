@@ -2,14 +2,16 @@
 # This file contains configuration flags to customize your site
 #
 
-# Name of your site (displayed in the header)
-name: Michael Caponi
-
-# Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+# Sidebar stuff
+title:    fourthcaponi
+tagline:  'A Place for Word Vomit'
+description: 'Welcome to my small corner of the internet. Please make yourself comfortable.'
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+
+author:
+  name: 'Michael Caponi'
 
 #
 # Flags below are optional
