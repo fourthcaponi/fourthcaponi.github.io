@@ -1,11 +1,13 @@
 <footer class="center">
   <div class="measure">
     <small>
-      &copy; {{ page.date | date: '%Y' }} Michael Caponi
+      &copy; <span class="post-meta">{{ page.date | date: "%Y" }}</span> Michael Caponi
     </small>
-    {% if site.show_sharing_icons %}
-      {% include share_buttons.html %}
-    {% endif %}
+  </div>
+  <div class="clearfix"></div>
+      {% if site.show_social_icons %}
+        {% include social_links.html %}
+      {% endif %}
   </div>
 </footer>
 {% if site.enable_anchorjs %}<!-- AnchorJS -->
