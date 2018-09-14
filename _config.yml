@@ -1,7 +1,7 @@
 # Site settings
 title:       fourthcaponi
+author:      Michael Caponi IV  
 email:       fourthcaponi@gmail.com
-author:      Michael Caponi
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     ""
 url:         "https://www.fourthcaponi.com"
@@ -16,15 +16,12 @@ google_verification:
 # - using both will skew your data (leave blank to not use at all)
 google_analytics:
 google_tag_manager:
-# Bing services
-bing_verification:
 
 # Optional features
 animated:             false
 show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    false
-ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
 enable_anchorjs: false
