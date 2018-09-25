@@ -1,17 +1,64 @@
-
 //
 // VARIABLES
 //
+$base-font-size: 14px;
+$bold-font-weight: bold;
+$font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
+$heading-font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+$line-height: 1.5;
+$heading-font-weight: 900;
+$heading-line-height: 1.25;
+$monospace-font-family: "Source Code Pro", Consolas, monospace;
+$h1: 2.998rem;
+$h2: 1.5rem;
+$h3: 1.25rem;
+$h4: 1rem;
+$h5: 0.875rem;
+$h6: 0.75rem;
+$h00: 4rem;
+$h0: 3rem;
+$h00-responsive: 8vw;
+$h0-responsive: 6vw;
+$h1-responsive: 4vw;
+$h00-responsive-max: 7.68rem;
+$h0-responsive-max: 5.76rem;
+$h1-responsive-max: 3.84rem;
+$abbr-border-bottom: 1px black dotted;
 
 // Colors
-$blue: #4183C4;
+
+$light-green: #96d5a2;
+$mid-green: #80b588;
+$gold: #ffa64c;
+$rust: #f5410a;
+$dark: #36251b;
+
+$blue: #0076df;
+$red: #f95020;
+$green: #00cf26;
+$yellow: #efcc00;
+$orange: #ffcc22;
+$purple: #f92080;
+$dark-blue: #00369f;
+$green: #00ab37;
+$dark-green: #009f06;
+$light-pink: #ffdddd;
+$light-green: #ddffdd;
+$dark-gray: #333;
+$mid-gray: #777;
+$light-gray: #ccc;
+$lighter-gray: #eee;
+$darken-1: rgba(#000, 0.0625);
+$darken-2: rgba(#000, 0.125);
+$darken-3: rgba(#000, 0.25);
+$darken-4: rgba(#000, 0.5);
+
+// Colors
+$blue: #4183c4;
 
 // Grays
 $black: #000;
-$darkerGray: #222;
-$darkGray: #333;
 $gray: #666;
-$lightGray: #eee;
 $white: #fff;
 
 // Font stacks
@@ -26,19 +73,63 @@ $georgia: Georgia, serif;
   }
 }
 
+// Breakpoints
+$breakpoint-md: "(min-width: 52em)";
+$breakpoint-xl: "(min-width: 96em)";
+
+// Buttons
+$button-font-size: inherit;
+$button-font-weight: normal;
+$button-line-height: 1.125rem;
+$button-padding-y: 0.5rem;
+$button-padding-x: 1rem;
+$button-font-family: $heading-font-family;
+
+// Forms
+$form-field-font-size: 1rem;
+$form-field-height: 2.25rem;
+$form-field-padding-y: 0.5rem;
+$form-field-padding-x: 0.5rem;
+
 // Page width
-$measure-width: 42rem !default;
+$measure-width: 42rem;
+
+// Borders
+$border-color: $light-gray;
+$border-width: 1px;
+$border-radius: 3px;
 
 // Whitespace
-$space-1: .5rem !default;
-$space-2: 1rem !default;
-$space-3: 2rem !default;
-$space-4: 4rem !default;
+$space-1: 0.5rem;
+$space-2: 1rem;
+$space-3: 2rem;
+$space-4: 4rem;
+
+// Code
+$pre-border-radius: 0;
+$pre-background-color: #fafafa;
+$hljs-comment: $mid-gray;
+$hljs-keyword: $dark-blue;
+$hljs-name: $dark-gray;
+$hljs-number: $dark-green;
+$hljs-string: $red;
+$hljs-title: $red;
+$hljs-type: $dark-blue;
+$hljs-tag: $dark-blue;
+$hljs-attribute: $dark-green;
+$hljs-regexp: $dark-green;
+$hljs-symbol: $purple;
+$hljs-built-in: $dark-blue;
+$hljs-preprocessor: $mid-gray;
+$hljs-deletion: $light-pink;
+$hljs-addition: $light-green;
+$hljs-change: $dark-blue;
+$hljs-chunk: $light-gray;
 
 // Footer
 $footer-border-top: thin solid #f3f3f3;
-$footer-padding: $space-3;
+$footer-padding: $space-2;
 $footer-color: #7a7a7a;
 $footer-bg-color: #fafafa;
 $footer-font-weight: 300;
-$footer-font-size: .75rem;
+$footer-font-size: 0.75rem;
