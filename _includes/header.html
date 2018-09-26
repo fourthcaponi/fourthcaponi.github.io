@@ -1,6 +1,31 @@
 <header class="jumbotron jumbotron-fluid">
     <div class="container">
+        {% if page.title == "Home" %}
+
         <h1 class="display-4">{{ site.name }}</a></h1>
+        <p class="lead">Welcome to my little corner of the internet.</p>
+
+        {% elsif page.title == "About" %}
+
+        <h1 class="display-4">Hello There!</a></h1>
+        <p class="lead">If you didn't notice already, my name is Michael Caponi.</p>
+
+        {% elsif page.title == "Contact" %}
+
+        <h1 class="display-4">Say Hello!</a></h1>
+        <p class="lead">Shoot me a message and let's talk.</p>
+
+        {% elsif page.layout == "post" %}
+
+        <h1 class="display-4">{{ page.title }}</a></h1>
+        <p class="lead">Written on {{ page.date | date: "%B %e, %Y" }}</p>
+        
+        {% else %}
+
+        <h1 class="display-4">Test</a></h1>
         <p class="lead">{{ site.description }}</p>
+
+        {% endif %}
+
     </div>
 </header>

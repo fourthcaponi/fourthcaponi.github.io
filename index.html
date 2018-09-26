@@ -1,22 +1,24 @@
 ---
 layout: default
+title: Home
 ---
 
+{% assign posts_count = paginator.posts | size %}
+
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  {% for post in paginator.posts %}
+  <div class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <a class="post-link" href="{{ site.baseurl }}{{ post.url }}"><h1 class="post-title">{{ post.title }}</h1></a>
 
-      <div class="entry">
-        {% if post.summary %}
-          {{ post.summary }}
-        {% else %}
-          {{ post.excerpt }}
-        {% endif %}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    <span class="post-summary">
+      {% if post.summary %}
+        {{ post.summary }}
+      {% else %}
+        {{ post.excerpt }}
+      {% endif %}
+    </span>
+  </div>
   {% endfor %}
 </div>
+{% include pagination.html %}
