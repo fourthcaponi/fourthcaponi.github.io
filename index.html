@@ -5,20 +5,27 @@ title: Home
 
 {% assign posts_count = paginator.posts | size %}
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
+<div class="home">
 
-    <a class="post-link" href="{{ site.baseurl }}{{ post.url }}"><h1 class="post-title">{{ post.title }}</h1></a>
+  <div class="posts">
+    {% for post in paginator.posts %}
+    <div class="post">
 
-    <span class="post-summary">
-      {% if post.summary %}
+      <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
+        <h1 class="post-title">{{ post.title }}</h1>
+      </a>
+
+      <span class="post-summary">
+        {% if post.summary %}
         {{ post.summary }}
-      {% else %}
+        {% else %}
         {{ post.excerpt }}
-      {% endif %}
-    </span>
+        {% endif %}
+      </span>
+      
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
+  {% include pagination.html %}
+
 </div>
-{% include pagination.html %}

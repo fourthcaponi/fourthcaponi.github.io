@@ -8,11 +8,12 @@
 //
 
 @import "reset";
-@import "variables";
 @import "bootstrap-scss/bootstrap";
+@import "variables";
 @import "base";
 @import "svg-icons";
 @import "typography";
+@import "pagination";
 @import "header";
 @import "navbar";
 @import "posts";
@@ -122,7 +123,7 @@
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $gray-600;
 }
 
 // // Specify the color of the selection
