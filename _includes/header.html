@@ -1,31 +1,62 @@
 <header class="jumbotron jumbotron-fluid">
     <div class="container">
-        {% if page.title == "Home" %}
+        <div class="jumbo-content">
+                <h1>{{ site.name }}</h1>
+                <p>Welcome to my little corner of the internet.</p>
+            <!-- {% if page.title == "Home" %}
 
-        <h1 class="display-4">{{ site.name }}</a></h1>
-        <p>Welcome to my little corner of the internet.</p>
+            
 
-        {% elsif page.title == "About" %}
+            {% elsif page.title == "About" %}
 
-        <h1 class="display-4">Hello There!</a></h1>
-        <p class="lead">If you didn't notice already, my name is Michael Caponi.</p>
+            <h1 class="display-4">Hello There!</a></h1>
+            <p class="lead">If you didn't notice already, my name is Michael Caponi.</p>
 
-        {% elsif page.title == "Contact" %}
+            {% elsif page.title == "Contact" %}
 
-        <h1 class="display-4">Say Hello!</a></h1>
-        <p class="lead">Shoot me a message and let's talk.</p>
+            <h1 class="display-4">Say Hello!</a></h1>
+            <p class="lead">Shoot me a message and let's talk.</p>
 
-        {% elsif page.layout == "post" %}
+            {% else %}
 
-        <h1 class="display-4">{{ page.title }}</a></h1>
-        <p class="lead">Written on {{ page.date | date: "%B %e, %Y" }}</p>
-        
-        {% else %}
+            <h1 class="display-4">Test</a></h1>
+            <p class="lead">{{ site.description }}</p>
 
-        <h1 class="display-4">Test</a></h1>
-        <p class="lead">{{ site.description }}</p>
+            {% endif %} -->
+        </div>
 
-        {% endif %}
+        <div class="tabs">
+            <ul class="nav nav-tabs nav-justified">
+                {% if page.title == "Home" or page.layout == "post" %}
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ site.baseurl }}/" >Blog</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.baseurl }}/" >Blog</a>
+                </li>
+                {% endif %}
 
-    </div>
+                {% if page.title == "About" %}
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ site.baseurl }}/about" >About</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.baseurl }}/about" >About</a>
+                </li>
+                {% endif %}
+
+                {% if page.title == "Contact" %}
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ site.baseurl }}/contact" >Contact</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.baseurl }}/contact" >Contact</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+
 </header>

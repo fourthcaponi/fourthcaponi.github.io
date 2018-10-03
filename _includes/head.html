@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% if page.excerpt %}
     <meta name="description" content="{{ page.excerpt| strip_html }}" />
@@ -13,20 +13,14 @@
     <meta property="og:description" content="{{ site.description }}" />
     {% endif %}
     <meta name="author" content="{{ site.name }}" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="{{ site.name }}">
-
+  
     <title>
         {% if page.title == "Home" %}
-            {{ site.handle }}
+            {{ site.title }}
         {% else %}
-            {{ page.title }} – {{ site.handle }}
+            {{ page.title }} – {{ site.title }}
         {% endif %}
     </title>
-    <!--[if lt IE 9]>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -34,7 +28,6 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/main.css" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Muli|Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Poppins|Hind" rel="stylesheet">
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 </head>

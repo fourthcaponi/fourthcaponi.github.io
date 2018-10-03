@@ -1,5 +1,30 @@
 .jumbotron {
+  padding-bottom: 0;
   margin-bottom: 0;
+  background-image: linear-gradient(to top, #3c6b7c, #34727f, #2f797f, #2f807d, #368678);
+}
+
+.jumbo-content, .jumbo-content > p {
+  text-align: center;
+  color: #d5eae5;
+}
+
+.tabs {
+  margin-top: $space-4;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+  color: #fff;
+  border: none;
+
+  &:hover {
+    color: #acccc5;
+  }
+
 }
 
 header {
