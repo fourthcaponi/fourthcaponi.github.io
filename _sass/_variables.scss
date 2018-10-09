@@ -1,11 +1,9 @@
 //
 // VARIABLES
 //
-$base-font-size: 16px;
 $bold-font-weight: bold;
 $font-family: "Muli", "PT Serif", Georgia, "Times New Roman", serif;
 $heading-font-family: "Poppins", "Helvetica Neue", Helvetica, sans-serif;
-$line-height: 1.6;
 $heading-font-weight: 900;
 $heading-line-height: 1.25;
 $monospace-font-family: "Source Code Pro", Consolas, monospace;
@@ -76,9 +74,10 @@ $border-width: 1px;
 $border-radius: 3px;
 
 // Whitespace
-$space-1: 0.5rem;
-$space-2: 1rem;
-$space-3: 2rem;
+$space-0: 0.5rem;
+$space-1: 1rem;
+$space-2: 2rem;
+$space-3: 3rem;
 $space-4: 4rem;
 $space-5: 5rem;
 
