@@ -1,9 +1,8 @@
 //
 // VARIABLES
 //
-$bold-font-weight: bold;
-$font-family: "Muli", "PT Serif", Georgia, "Times New Roman", serif;
-$heading-font-family: "Poppins", "Helvetica Neue", Helvetica, sans-serif;
+
+$heading-font-family: "Encode Sans", "Helvetica Neue", Helvetica, sans-serif;
 $heading-font-weight: 900;
 $heading-line-height: 1.25;
 $monospace-font-family: "Source Code Pro", Consolas, monospace;
@@ -104,7 +103,7 @@ $hljs-chunk: $gray-400;
 
 // Footer
 $footer-border-top: thin solid #f3f3f3;
-$footer-padding: $space-3;
+$footer-padding: $space-2;
 $footer-bg-color: #fafafa;
 $footer-font-weight: 300;
 $footer-font-size: 0.75rem;
