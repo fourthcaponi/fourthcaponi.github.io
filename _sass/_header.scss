@@ -1,17 +1,26 @@
-.jumbotron {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  background-image: linear-gradient(to top, #3c6b7c, #34727f, #2f797f, #2f807d, #368678);
+#particles-js {
+  position:absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.jumbo-content, .jumbo-content > p {
+.jumbotron {
+  padding: 0 0 0 0;
+  position: relative;
+  background-color:#151D24;
+}
+
+.jumbo-content {
   text-align: center;
+  padding-top: $space-4;
+  padding-bottom: $space-3;
   color: #d5eae5;
 }
 
 .site-nav {
-  margin-top: $space-4;
+  position: relative;
   margin-bottom: $space-4;
+  z-index: 1;
 }
 
 .nav-tabs {
